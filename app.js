@@ -5,7 +5,6 @@ let cookieParser = require("cookie-parser");
 let logger = require("morgan");
 
 let indexRouter = require("./routes/index");
-let usersRouter = require("./routes/users");
 
 let app = express();
 let port = 1005;
@@ -19,9 +18,18 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
+app.use("/plugins", express.static(path.join(__dirname, "public/plugins")));
+app.use("/images", express.static(path.join(__dirname, "public/images")));
+app.use(
+  "/stylesheets",
+  express.static(path.join(__dirname, "public/stylesheets"))
+);
+app.use(
+  "/javascripts",
+  express.static(path.join(__dirname, "public/javascripts"))
+);
 
 app.use("/", indexRouter);
-app.use("/users", usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
