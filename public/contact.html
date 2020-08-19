@@ -10,14 +10,9 @@
       name="description"
       content="CafeZone - Coffee responsive HTML template"
     />
-    <meta
-      property="og:title"
-      content="CafeZone - Coffee responsive HTML template"
-    />
-    <meta
-      property="og:description"
-      content="CafeZone - Coffee responsive HTML template"
-    />
+    <meta name="description" content="TacoLulu" />
+    <meta property="og:title" content="TacoLulu" />
+    <meta property="og:description" content="TacoLulu" />
     <meta property="og:image" content="" />
     <meta name="format-detection" content="telephone=no" />
 
@@ -26,7 +21,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
 
     <!-- PAGE TITLE HERE -->
-    <title>CafeZone - Coffee responsive HTML template</title>
+    <title>TacoLulu</title>
 
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -101,36 +96,45 @@
                 <li><a href="our-menu.html" class="nav-link">menu</a></li>
                 <li><a href="gallery.html" class="nav-link">gallery</a></li>
                 <li>
-                  <a href="events.html" class="nav-link">parties & events</a>
+                  <a
+                    href="https://www.restaurantcateringsystems.com/TacoLulu"
+                    target="_blank"
+                    class="nav-link"
+                    >catering</a
+                  >
                 </li>
-                <li><a href="blog.html" class="nav-link">blog</a></li>
+                <li>
+                  <a
+                    href="https://tacolulu.hngr.co/"
+                    target="_blank"
+                    class="nav-link"
+                    >order online</a
+                  >
+                </li>
                 <li>
                   <a href="contact.html" class="nav-link active">contact us</a>
-                </li>
-                <li>
-                  <a href="reservation.html" class="nav-link">reservation</a>
                 </li>
               </ul>
             </div>
             <div class="footer-menu p-b10">
               <ul class="list-inline footer-social text-center m-b0">
                 <li>
-                  <a href="javascript:void(0);" class="fa fa-facebook"></a>
+                  <a
+                    href="https://www.facebook.com/tacoluluchicago/"
+                    target="_blank"
+                    class="fa fa-facebook"
+                  ></a>
                 </li>
                 <li>
-                  <a href="javascript:void(0);" class="fa fa-twitter"></a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);" class="fa fa-linkedin"></a>
-                </li>
-                <li>
-                  <a href="javascript:void(0);" class="fa fa-google-plus"></a>
+                  <a
+                    href="http://instagram.com/tacoluluchicago"
+                    target="_blank"
+                    class="fa fa-instagram"
+                  ></a>
                 </li>
               </ul>
               <p class="copyright">© Copyright 2020</p>
-              <p class="copyright-text">
-                Design With By <span>DexignLab</span>
-              </p>
+              <p class="copyright-text">Developed by <span>Zenyx LLC</span></p>
             </div>
           </div>
         </div>
@@ -147,7 +151,7 @@
             <div class="container">
               <div class="dlab-bnr-inr-entry">
                 <h1 class="text-white">CONTACT US</h1>
-                <p class="sub-title">CafeZone cafe & restaurant</p>
+                <p class="sub-title text-primary-two">TacoLulu</p>
               </div>
             </div>
           </div>
@@ -160,7 +164,7 @@
                   <div class="contact-form">
                     <div class="section-head full-head text-center">
                       <h2 class="main-title text-primary">Have a question?</h2>
-                      <h3 class="title">MAIL US</h3>
+                      <h3 class="title">GET IN TOUCH WITH US</h3>
                       <div class="dlab-separator"></div>
                     </div>
                     <div class="dzFormMsg"></div>
@@ -178,7 +182,7 @@
                                 name="dzName"
                                 type="text"
                                 required
-                                class="form-control"
+                                class="form-control contact-input"
                                 placeholder="Your Name"
                               />
                             </div>
@@ -190,9 +194,9 @@
                               <input
                                 name="dzEmail"
                                 type="email"
-                                class="form-control"
+                                class="form-control contact-input"
                                 required
-                                placeholder="Your Email Id"
+                                placeholder="Your Email Address"
                               />
                             </div>
                           </div>
@@ -204,8 +208,8 @@
                                 name="dzOther[Phone]"
                                 type="text"
                                 required
-                                class="form-control"
-                                placeholder="Phone"
+                                class="form-control contact-input"
+                                placeholder="Phone Number"
                               />
                             </div>
                           </div>
@@ -216,41 +220,20 @@
                               <textarea
                                 name="dzMessage"
                                 rows="4"
-                                class="form-control"
+                                class="form-control contact-input"
                                 required
                                 placeholder="Your Message..."
                               ></textarea>
                             </div>
                           </div>
                         </div>
-                        <div class="col-lg-12">
-                          <div class="form-group">
-                            <div class="input-group">
-                              <div
-                                class="g-recaptcha"
-                                data-sitekey="<!-- Put reCaptcha Site Key -->"
-                                data-callback="verifyRecaptchaCallback"
-                                data-expired-callback="expiredRecaptchaCallback"
-                              ></div>
-                              <input
-                                class="form-control d-none"
-                                style="display: none;"
-                                data-recaptcha="true"
-                                required
-                                data-error="Please complete the Captcha"
-                              />
-                            </div>
-                          </div>
-                        </div>
                         <div class="col-md-12">
-                          <button
+                          <input
                             name="submit"
                             type="submit"
                             value="Submit"
                             class="btn btn-block bg-secondry"
-                          >
-                            <span>Submit</span>
-                          </button>
+                          />
                         </div>
                       </div>
                     </form>
@@ -264,9 +247,14 @@
                       alt=""
                     />
                     <div class="contact-text">
-                      <h2 class="title">Need a table?</h2>
-                      <h6 class="sub-title">Make your reservation online!</h6>
-                      <a href="#" class="btn">Reserve now!</a>
+                      <h2 class="title">Need catering?</h2>
+                      <h6 class="sub-title">Make your order online!</h6>
+                      <a
+                        href="https://www.restaurantcateringsystems.com/TacoLulu"
+                        target="_blank"
+                        class="btn"
+                        >Order now!</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -284,14 +272,13 @@
                     <h3 class="title">VISIT US!</h3>
                     <div class="dlab-separator"></div>
                     <p class="m-b0">
-                      We are located next to Green House Club. 8901 Marmora Road
-                      Chi Minh City, Vietnam
+                      We are located at 601 W Adams St, Chicago, IL 60661
                     </p>
                   </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14443.076073250879!2d75.8417313!3d25.177276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1577358063715!5m2!1sen!2sin"
+                    src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=601%20W%20Adams%20St,%20Chicago,%20IL%2060661+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
                     style="
                       border: 0;
                       height: 300px;
@@ -315,8 +302,8 @@
                     <h2 class="main-title text-primary">Have a question?</h2>
                     <h3 class="title">CONTACT US</h3>
                     <div class="dlab-separator"></div>
-                    <p class="m-b0">Call us: +0 123 456 7890</p>
-                    <p class="m-b0">Mail us: info@example.com</p>
+                    <p class="m-b0">Call us: +1 312 818 2680</p>
+                    <p class="m-b0">Mail us: reviews@puresilvercreative.com</p>
                   </div>
                 </div>
               </div>
@@ -331,7 +318,7 @@
                 <div class="row align-items-center">
                   <div class="col-lg-6 col-md-6">
                     <div class="text-left text-white">
-                      <p class="copyright">Copyright © 2020 DexignLab</p>
+                      <p class="copyright">Copyright © 2020 TacoLulu</p>
                     </div>
                   </div>
                   <div class="col-lg-6 col-md-6">
@@ -339,26 +326,16 @@
                       <ul class="list-inline footer-social m-b0">
                         <li>
                           <a
-                            href="javascript:void(0);"
+                            href="https://www.facebook.com/tacoluluchicago"
                             class="fa fa-facebook"
+                            target="_blank"
                           ></a>
                         </li>
                         <li>
                           <a
-                            href="javascript:void(0);"
-                            class="fa fa-twitter"
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            href="javascript:void(0);"
-                            class="fa fa-linkedin"
-                          ></a>
-                        </li>
-                        <li>
-                          <a
-                            href="javascript:void(0);"
-                            class="fa fa-google-plus"
+                            href="https://www.instagram.com/tacoluluchicago"
+                            class="fa fa-instagram"
+                            target="_blank"
                           ></a>
                         </li>
                       </ul>
