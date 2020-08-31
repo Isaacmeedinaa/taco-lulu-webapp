@@ -246,6 +246,11 @@ h6 {
   color: #ea232a;
   font-family: Oswald, sans-serif;
 }
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
 h1 a,
 h2 a,
 h3 a,

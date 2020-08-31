@@ -32,6 +32,12 @@ router.get("/gallery.html", function (req, res, next) {
   });
 });
 
+router.get("/franchise.html", function (req, res, next) {
+  res.sendFile("public/franchise.hmtl", {
+    root: "./",
+  });
+});
+
 router.get("/contact.html", function (req, res, next) {
   res.sendFile("public/contact.html", {
     root: "./",
