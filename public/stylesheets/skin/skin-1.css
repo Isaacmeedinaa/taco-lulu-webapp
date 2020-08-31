@@ -180,6 +180,7 @@ h6 a:hover,
 }
 .text-primary-two {
   color: #ea232a !important;
+  font-size: 30px !important;
 }
 @media only screen and (max-width: 991px) {
   .nav-dark.header-nav .nav > li > a:hover,
