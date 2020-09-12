@@ -86,7 +86,7 @@
 .one-page-layout .sidenav.full-page .dlab-sidenav-area {
   z-index: 99;
   position: relative;
-  padding: 20px 0;
+  padding: 0px 0;
 }
 .one-page-layout .sidenav.full-page .footer-social li a {
   color: #fff;
