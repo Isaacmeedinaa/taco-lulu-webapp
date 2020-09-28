@@ -9,7 +9,7 @@
     <meta name="description" content="TacoLulú" />
     <meta property="og:title" content="TacoLulú" />
     <meta property="og:description" content="TacoLulú" />
-    <meta property="og:image" content="" />
+    <meta property="og:image" content="https://tacolulu-webapp.web.app/images/main-slider/slide1.jpg" />
     <meta name="format-detection" content="telephone=no" />
 
     <!-- FAVICONS ICON -->
@@ -30,6 +30,10 @@
     <!-- STYLESHEETS -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" type="text/css" href="/stylesheets/plugins.css" />
@@ -93,7 +97,7 @@
               <ul class="nav">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li>
-                  <a href="about.html" class="nav-link active">about us</a>
+                  <a href="about.html" class="nav-link">about us</a>
                 </li>
                 <li><a href="our-menu.html" class="nav-link">menu</a></li>
                 <li><a href="gallery.html" class="nav-link">gallery</a></li>
@@ -182,27 +186,36 @@
                     <h3 class="title">TacoLulú</h3>
                     <div class="dlab-separator"></div>
                     <p>
-                      Cerveceria Y Taqueria “Taco LuLú” (Named after the owner
-                      Michael’s dog, LuLú) is a Cozy Neighborhood Cerveceria Y
-                      Taqueria Serving Traditional Mexican Food Located in the
-                      Heart of Chicago’s West Loop, Just Blocks from Willis
-                      Tower, Union Station and Old St. Pat’s Church! We Take
-                      Pride in Making our Dishes from Scratch Daily, Using Only
-                      the Freshest and Highest Quality Ingredients. We are Proud
-                      to Feature “Arrachera”, which is a Fine Cut of Inner Skirt
-                      Steak that is Trimmed in House and Char-Grilled Fresh
-                      Throughout the Day. We Also Offer a Full Menu with
-                      Home-Style Recipes including “Pollo” Marinated Chicken,
-                      House made Pastor & Picadillo, Red & Green Salsas, Rice &
-                      Beans, Guacamole, and our Addictive Pico de Gallo! In
-                      Addition, we have a Selection of Gluten-Free and
-                      Vegetarian Options as well! We are Currently BYOB for the
-                      Moment but will be adding Beer, House made Margaritas &
-                      Sangria Soon!! Our Passion is to Share Our Favorite Foods
-                      and Inviting Atmosphere with You, Your Family, and
-                      Friends. See you Soon!
+                      Cerveceria Y Taqueria “Taco LuLú” (named after the owner
+                      Michael’s dog, LuLú) is a cozy neighborhood Cerveceria Y
+                      Taqueria serving traditional Mexican food located in the
+                      heart of Chicago’s West Loop, just blocks from Willis
+                      Tower, Union Station and Old St. Pat’s Church!
+                      <br />
+                      <br />
+                      We take pride in making our dishes from scratch daily,
+                      using only the freshest and highest quality ingredients.
+                      We are proud to feature “Arrachera”, which is a fine cut
+                      of inner skirt steak that is trimmed in-house and
+                      char-grilled fresh throughout the day. We also offer a
+                      full menu with home-style recipes including “pollo”
+                      marinated shredded chicken, house-made pastor & picadillo,
+                      delicious salsas, rice & beans, guacamole, and our
+                      addictive pico de gallo! We have a selection of
+                      gluten-free and vegetarian options as well!
+                      <br />
+                      <br />
+                      We are Currently BYOB for the moment but will be adding
+                      beer, house made margaritas & sangria soon!
+                      <br />
+                      <br />
+                      Our Passion is to Share Our Favorite Foods and Inviting
+                      Atmosphere with You, Your Family, and Friends. See you
+                      Soon!
+                      <br />
+                      <br />
+                      <p style="font-family: 'Dancing Script', cursive; font-size: 30px; font-weight: 700;">Michael & LuLú</p>
                     </p>
-                    <p>Michael & LuLú</p>
                   </div>
                 </div>
               </div>
@@ -283,12 +296,13 @@
                     <h3 class="title">VISIT US!</h3>
                     <div class="dlab-separator"></div>
                     <p class="m-b0">
-                      We are located at 601 W Adams St, Chicago, IL 60661
+                      601 W Adams St, Chicago, IL 60661 on the corner of
+                      Jefferson and Adams
                     </p>
                     <br />
                     <p style="color: #ea232b">
-                      MON: 10:00AM - 2:00PM <br />
-                      TUE - FRI: 10:00AM - 6:30PM <br />
+                      MON: 9:00AM - 2:00PM <br />
+                      TUE - FRI: 9:00AM - 6:30PM <br />
                       SAT - SUN: Closed
                     </p>
                   </div>
@@ -325,8 +339,8 @@
                       >
                     </p>
                     <p class="m-b0">
-                      <a href="mailto:info@tacolulu.com" target="_blank"
-                        >Email us: info@tacolulu.com</a
+                      <a href="mailto:admin@tacolulu.com" target="_blank"
+                        >Email us: admin@tacolulu.com</a
                       >
                     </p>
                   </div>
@@ -402,6 +416,29 @@
     <!-- LIGHTGALLERY -->
     <script src="/plugins/scroll/scrollbar.min.js"></script>
     <script src="/javascripts/custom.js"></script>
-    <!-- CUSTOM FUCTIONS  -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      var firebaseConfig = {
+        apiKey: "AIzaSyDMZIZ6sGQ83uhxZtFpIl5buWUaal2QZxQ",
+        authDomain: "tacolulu-webapp.firebaseapp.com",
+        databaseURL: "https://tacolulu-webapp.firebaseio.com",
+        projectId: "tacolulu-webapp",
+        storageBucket: "tacolulu-webapp.appspot.com",
+        messagingSenderId: "741925829878",
+        appId: "1:741925829878:web:05b26f474ad70cc566c0d7",
+        measurementId: "G-CVSJ7BSM61"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
   </body>
 </html>

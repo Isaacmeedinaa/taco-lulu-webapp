@@ -8,7 +8,7 @@ router.get("/", function (req, res, next) {
   });
 });
 
-router.get("/home.html", function (req, res, next) {
+router.get("/index.html", function (req, res, next) {
   res.sendFile("public/index.html", {
     root: "./",
   });
