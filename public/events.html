@@ -7,7 +7,7 @@
     <meta name="author" content="" />
     <meta name="robots" content="" />
     <meta name="description" content="TacoLulú" />
-    <meta property="og:title" content="TacoLulú" />
+    <meta property="og:title" content="Events" />
     <meta property="og:description" content="TacoLulú" />
     <meta
       property="og:image"
@@ -20,7 +20,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
 
     <!-- PAGE TITLE HERE -->
-    <title>TacoLulú</title>
+    <title>Events</title>
 
     <!-- MOBILE SPECIFIC -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -127,25 +127,15 @@
               <ul class="nav">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li>
-                  <a href="about.html" class="nav-link">about us</a>
+                  <a href="about-us.html" class="nav-link">about us</a>
                 </li>
                 <li><a href="our-menu.html" class="nav-link">menu</a></li>
                 <li><a href="gallery.html" class="nav-link">gallery</a></li>
                 <li>
-                  <a
-                    href="https://www.restaurantcateringsystems.com/TacoLulu"
-                    target="_blank"
-                    class="nav-link"
-                    >catering</a
-                  >
+                  <a href="catering.html" class="nav-link">catering</a>
                 </li>
                 <li>
-                  <a
-                    href="https://www.toasttab.com/taco-lulu-601-w-adams-st/"
-                    target="_blank"
-                    class="nav-link"
-                    >order online</a
-                  >
+                  <a href="order-online.html" class="nav-link">order online</a>
                 </li>
                 <li>
                   <a href="events.html" class="nav-link active">Events</a>
@@ -222,15 +212,19 @@
                     <form
                       method="post"
                       class="dzForm"
-                      action="script/contact.php"
+                      action="https://formspree.io/f/mvolzjap"
                     >
-                      <input type="hidden" value="Contact" name="dzToDo" />
+                      <input
+                        type="hidden"
+                        value="Events Form"
+                        name="Events Form"
+                      />
                       <div class="row">
                         <div class="col-md-12">
                           <div class="form-group">
                             <div class="input-group">
                               <input
-                                name="dzName"
+                                name="name"
                                 type="text"
                                 required
                                 class="form-control contact-input"
@@ -243,7 +237,7 @@
                           <div class="form-group">
                             <div class="input-group">
                               <input
-                                name="dzEmail"
+                                name="email"
                                 type="email"
                                 class="form-control contact-input"
                                 required
@@ -282,7 +276,7 @@
                           <div class="form-group">
                             <div class="input-group">
                               <input
-                                name="dzOther[Phone]"
+                                name="phone"
                                 type="text"
                                 required
                                 class="form-control contact-input"
@@ -295,7 +289,7 @@
                           <div class="form-group">
                             <div class="input-group">
                               <textarea
-                                name="dzMessage"
+                                name="message"
                                 rows="4"
                                 class="form-control contact-input"
                                 required

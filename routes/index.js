@@ -14,8 +14,8 @@ router.get("/index.html", function (req, res, next) {
   });
 });
 
-router.get("/about.html", function (req, res, next) {
-  res.sendFile("public/about.html", {
+router.get("/about-us.html", function (req, res, next) {
+  res.sendFile("public/about-us.html", {
     root: "./",
   });
 });
@@ -38,11 +38,23 @@ router.get("/events.html", function (req, res, next) {
   });
 });
 
-router.get("/franchise.html", function (req, res, next) {
-  res.sendFile("public/franchise.hmtl", {
+router.get("/order-online.html", function (req, res, next) {
+  res.sendFile("public/order-online.html", {
     root: "./",
   });
 });
+
+router.get("/catering.html", function (req, res, next) {
+  res.sendFile("public/catering.html", {
+    root: "./",
+  });
+});
+
+// router.get("/franchise.html", function (req, res, next) {
+//   res.sendFile("public/franchise.html", {
+//     root: "./",
+//   });
+// });
 
 router.get("/contact.html", function (req, res, next) {
   res.sendFile("public/contact.html", {
